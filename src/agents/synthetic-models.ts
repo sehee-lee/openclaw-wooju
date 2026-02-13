@@ -36,6 +36,14 @@ export const SYNTHETIC_MODEL_CATALOG = [
     maxTokens: 128000,
   },
   {
+    id: "hf:zai-org/GLM-5",
+    name: "GLM-5",
+    reasoning: false,
+    input: ["text"],
+    contextWindow: 198000,
+    maxTokens: 128000,
+  },
+  {
     id: "hf:deepseek-ai/DeepSeek-R1-0528",
     name: "DeepSeek R1 0528",
     reasoning: false,
