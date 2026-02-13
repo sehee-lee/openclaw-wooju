@@ -71,3 +71,16 @@ USER.md
 
 # local tooling
 .serena/
+
+# Wooju 개인 설정
+.openclaw/
+*.log
+
+# IDE
+.idea/
+*.swp
+*.swo
+*~
+
+# OS
+Thumbs.db
