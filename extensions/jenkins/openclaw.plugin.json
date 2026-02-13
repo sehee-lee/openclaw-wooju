@@ -1,0 +1,60 @@
+{
+  "id": "jenkins",
+  "name": "Jenkins",
+  "description": "Jenkins CI/CD integration with secure Keychain credential storage",
+  "uiHints": {
+    "baseUrl": {
+      "label": "Jenkins URL",
+      "help": "Base URL of your Jenkins server (e.g., https://jenkins.company.com)",
+      "placeholder": "https://jenkins.company.com"
+    },
+    "account": {
+      "label": "Keychain Account",
+      "help": "Keychain account name for storing credentials",
+      "advanced": true
+    },
+    "allowedParameters": {
+      "label": "Allowed Parameters",
+      "help": "List of build parameters that agents can modify (whitelist)"
+    },
+    "timeoutMs": {
+      "label": "Timeout (ms)",
+      "help": "Request timeout in milliseconds",
+      "advanced": true
+    },
+    "auditLog": {
+      "label": "Audit Logging",
+      "help": "Log all Jenkins tool calls for security auditing",
+      "advanced": true
+    }
+  },
+  "configSchema": {
+    "type": "object",
+    "additionalProperties": false,
+    "properties": {
+      "baseUrl": {
+        "type": "string"
+      },
+      "account": {
+        "type": "string",
+        "default": "default"
+      },
+      "allowedParameters": {
+        "type": "array",
+        "items": {
+          "type": "string"
+        },
+        "default": []
+      },
+      "timeoutMs": {
+        "type": "integer",
+        "minimum": 1000,
+        "default": 30000
+      },
+      "auditLog": {
+        "type": "boolean",
+        "default": true
+      }
+    }
+  }
+}
