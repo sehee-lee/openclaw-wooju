@@ -1,4 +1,4 @@
-> **🇰🇷 Wooju 배포판 사용자는 [README_wooju.md](./README_wooju.md)를 참고하세요.**
+> **🇰🇷 Wooju 배포판 사용자는 [README_ko.md](./README_ko.md)를 참고하세요.**
 
 # 🦞 OpenClaw — Personal AI Assistant
 
